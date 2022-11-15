@@ -12,8 +12,8 @@ const initialState: IFormData = {
   data: {
     dateFrom: null,
     dateTo: null,
-    fromCity: null,
-    toCity: null,
+    fromCity: "Москва",
+    toCity: "Ростов на Дону",
   },
 };
 

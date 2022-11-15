@@ -1,29 +1,39 @@
 import { FC } from 'react'
-
-
+import { useAppSelector } from '../../Hooks/redux-hooks';
 import { Logo } from './Logo/Logo';
+import { OneWay } from './OneWay/OneWay';
+import { Reversed } from './Reversed/Reversed';
+import { TotalPrice } from './TotalPrice/TotalPrice';
 import { TimeButton } from '../TimeButton/TimeButton';
 
+import cn from "classnames"
 import classes from "./FlightCard.module.scss"
-import dayjs from 'dayjs';
-import { Body } from './Body/Body';
-import { TotalPrice } from './TotalPrice/TotalPrice';
-
 
 export const FlightCard: FC = () => {
-  //const format = 'DD.MM.YYYY';
-  // const fromDate = dateFrom?.toString()
-  // const parseFromDate = dayjs(fromDate).format(format)
-  // const toDate = dateTo?.toString()
-  // const parseToDate = dayjs(toDate).format(format)
-  //console.log(new Date().toLocaleDateString());
-  return (
 
-    <div className={classes.card}>
-      <Logo />
+  const { data } = useAppSelector(state => state.form)
+  const checked = data.dateTo === null || data.dateTo === '' ? false : true
+
+  return (
+    <div className={cn(classes.card, {
+      [classes.cardHeight]: checked
+    })}>
       <div className={classes.main}>
-        <Body />
-        <TimeButton />
+        <div className={cn(classes.flex, {
+          [classes.h]: checked
+        })}>
+          <Logo />
+          <OneWay />
+        </div>
+        {checked &&
+          <div className={cn(classes.flex, classes.border, {
+            [classes.h]: checked
+          })}>
+            <Logo />
+            <Reversed />
+          </div>
+        }
+        {!checked && <TimeButton />}
       </div>
       <TotalPrice />
     </div>

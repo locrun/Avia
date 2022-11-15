@@ -4,6 +4,7 @@
   align-items: flex-start;
   margin-bottom: 24px;
 }
+
 .icons {
   width: 50px;
   display: flex;
@@ -59,38 +60,41 @@
 .duration {
   height: 56px;
   width: 278px;
+  margin-top: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #b7bac1;
+  position: relative;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
   text-align: center;
   color: #b7bac1;
-  border-radius: 10px;
+}
+.durationText {
+  margin-bottom: 15px;
 }
 
-.flex {
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #b7bac1;
-  position: relative;
-}
-.flex:before {
+.duration:before {
   display: block;
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  top: -4px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #c4c4c4;
 }
-.flex:after {
+.duration:after {
   display: block;
   content: "";
   position: absolute;
   right: 0;
-  bottom: -4px;
+  top: -4px;
   width: 8px;
   height: 8px;
   border-radius: 50%;

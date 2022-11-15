@@ -1,7 +1,7 @@
 .card {
   width: 980px;
   height: 200px;
-  padding: 35px 30px 35px 23px;
+  padding: 0 30px 0 23px;
   display: flex;
   justify-content: space-between;
   background: #ffffff;
@@ -9,7 +9,20 @@
   border-radius: 15px;
   position: relative;
 }
-
+.main {
+  border-right: 1px solid #dde3ee;
+}
+.flex {
+  padding-top: 35px;
+  display: flex;
+}
+.cardHeight {
+  height: 330px;
+}
+.h {
+  height: 165px;
+  padding-top: 40px;
+}
 .card:after {
   display: block;
   content: "Невозвратный";
@@ -24,11 +37,6 @@
   background: #8ba5d8;
   border-radius: 15px 0px;
 }
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main {
-  padding: 0 20px;
+.border {
+  border-top: 1px dashed #5c87db;
 }
