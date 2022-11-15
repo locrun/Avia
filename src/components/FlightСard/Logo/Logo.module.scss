@@ -1,0 +1,24 @@
+.wrapper {
+  height: 100%;
+  margin-top: 18px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  width: 39px;
+  height: 39px;
+  margin-bottom: 8px;
+}
+
+.logoText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5c5c5c;
+}

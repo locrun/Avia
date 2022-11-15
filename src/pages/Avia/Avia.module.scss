@@ -1,0 +1,36 @@
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0 15px;
+}
+.form {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+  align-items: flex-end;
+}
+.bluePlate {
+  padding: 17px 30px 27px 30px;
+  background: #5c87db;
+  border-radius: 15px 15px 0px 0px;
+}
+.whitePlate {
+  padding: 23px 30px;
+  display: flex;
+  justify-content: flex-end;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 0px 0px 15px 15px;
+}
+.mr {
+  margin-right: 21px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+}

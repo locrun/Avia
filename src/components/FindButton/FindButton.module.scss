@@ -1,0 +1,19 @@
+.Button {
+  background-color: #5c87db !important;
+  box-shadow: 0 3px 5px 2px rgba(92, 135, 219, 0.2);
+  color: white !important;
+  padding: 10px 50px !important;
+  font-weight: 400;
+  text-transform: lowercase !important;
+  border-radius: 10px !important;
+  font-size: 14px;
+  line-height: 140%;
+  &:hover {
+    background-color: #3e67b7 !important;
+  }
+}
+
+/* Increase the specificity */
+.Button:disabled {
+  background: rgb(155, 153, 190) !important;
+}
