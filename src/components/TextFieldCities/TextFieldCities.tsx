@@ -1,5 +1,5 @@
 import { TextField } from '@mui/material';
-import { ForwardedRef, forwardRef } from 'react';
+import { ChangeEvent, ForwardedRef, forwardRef } from 'react';
 import classes from "./TextFieldCities.module.scss"
 
 
@@ -7,7 +7,7 @@ interface IPropsTextField {
   label: string,
   ref?: ForwardedRef<HTMLInputElement>
   error?: boolean
-  onChange: (e: any) => void
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   value: string
   placeholder?: string,
   className?: string
