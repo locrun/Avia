@@ -15,4 +15,4 @@
 
   то необходимо отобразить карточку с информацией о двух рейсах
 
-### [Online demo](https://avia-tau.vercel.app/)
+### [Online demo](https://avia-theta.vercel.app/)
